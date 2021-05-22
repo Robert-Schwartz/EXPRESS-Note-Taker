@@ -6,9 +6,11 @@ module.exports = router;
 
 //GET /api/notes reads the db.json file and return all saved notes as JSON.
 router.get('/notes', (req, res) => {
-    let db = require('../../db/db.json');
-    res.json(db);
+    fs.readFile('db/db.json', "utf8", (err,data) => {
+    res.json(JSON.parse(data));
+    })
 })
+
 
 router.post('/notes', (req, res) => {
     const { body } = req;
