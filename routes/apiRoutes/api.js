@@ -6,8 +6,8 @@ module.exports = router;
 
 //GET /api/notes reads the db.json file and return all saved notes as JSON.
 router.get('/notes', (req, res) => {
-    fs.readFile('db/db.json', "utf8", (err,data) => {
-    res.json(JSON.parse(data));
+    fs.readFile('db/db.json', "utf8", (err, data) => {
+        res.json(JSON.parse(data));
     })
 })
 
@@ -15,7 +15,7 @@ router.get('/notes', (req, res) => {
 router.post('/notes', (req, res) => {
     const { body } = req;
     if (body === undefined) {
-        res.send("NO NOTE");
+        res.send("NO NOTES PAGE");
         return;
     }
     fs.readFile('db/db.json', "utf8", (err, data) => {
@@ -27,34 +27,10 @@ router.post('/notes', (req, res) => {
             if (!err) {
                 res.send("ok");
             } else {
-                console.log("Error at writeFile: ", err);
+                console.log("Error at writeFile(): ", err);
                 throw err;
             }
         });
     });
 });
 
-
-/*
-// POST /api/notes receives a new note, adds it db.json, then returns new note to client
-router.post('/notes', (req, res) => {
-    let newNote = {
-        title: req.body.title,
-        text: req.body.text,
-        id: nanoid(8)
-    }
-    console.log("newNote =" + newNote)
-    AddNewNote(newNote);
-})
-
-// read file to get file from db.json then push, then re-write
-const AddNewNote = (newNote) => {
-fs.readFile(db, 'utf8', (err, data) => {
-    if (err) {
-        console.error(err)
-        return
-    }
-    console.log(data)
-})
-}
-*/
