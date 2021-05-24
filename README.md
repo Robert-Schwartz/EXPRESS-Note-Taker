@@ -1,11 +1,14 @@
 # EXPRESS-Note-Taker
+
 An application called Note Taker that can be used to write and save notes. This application will use an Express.js back end and will save and retrieve note data from a JSON file.
 
-Deployed on Heroku:  https://obscure-eyrie-61544.herokuapp.com/
+Deployed on Heroku: https://obscure-eyrie-61544.herokuapp.com/
 
-[GitHub Repo](https://github.com/Robert-Schwartz/Express-Note-Taker)  
+[GitHub Repo](https://github.com/Robert-Schwartz/Express-Note-Taker)
+
 ## Description
-Project to create a web server for a front-end application, called Note Taker 
+
+Project to create a web server for a front-end application, called Note Taker
 
 User Story
 AS A small business owner
@@ -13,6 +16,7 @@ I WANT to be able to write and save notes
 SO THAT I can organize my thoughts and keep track of tasks I need to complete
 
 ## Table of Contents
+
 - [Technologies](#Technologies)
 - [Installation](#Installation)
 - [Usage](#usage)
@@ -21,25 +25,31 @@ SO THAT I can organize my thoughts and keep track of tasks I need to complete
 - [License](#license)
 
 ## Technologies
-This project was built using 
-- HTML, CSS, Javascript, 
-- node.js,  npm, Express, and heroku
+
+This project was built using
+
+- HTML, CSS, Javascript,
+- node.js, npm, Express, and heroku
 
 ## Installation
+
 requires download of node.js, npm, Express npm,
 
 ## Usage
+
 > - Visit Deployed Webpage at https://obscure-eyrie-61544.herokuapp.com/
-> - Click on Get Started button to start
-    >  - Enter a title on the 'Note Title' text to insert a title
-    >  - Enter note text on the 'Note Text' text to insert a notation
-    >  - Click on the save icon to save your notes
+- Click on Get Started button to start
+- Enter a title on the 'Note Title' text to insert a title
+- Enter note text on the 'Note Text' text to insert a notation
+- Click on the save icon to save your notes
 
 ![preview](preview.png)
 
 ## Contributions
+
 UofA/Trilogy for front end
 Robert Schwartz, for all other functionality
 
-## License 
-Mit 
+## License
+
+Mit
