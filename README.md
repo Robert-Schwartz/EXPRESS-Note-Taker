@@ -36,6 +36,10 @@ requires download of node.js, npm, Express npm,
     >  - Click on the save icon to save your notes
 
 ![preview](preview.png)
+
 ## Contributions
 UofA/Trilogy for front end
 Robert Schwartz, for all other functionality
+
+## License 
+Mit 
