@@ -36,4 +36,3 @@ router.post("/notes", (req, res) => {
         });
     });
 });
-s
