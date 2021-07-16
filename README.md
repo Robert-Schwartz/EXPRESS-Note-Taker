@@ -15,6 +15,8 @@ AS A small business owner
 I WANT to be able to write and save notes
 SO THAT I can organize my thoughts and keep track of tasks I need to complete
 
+![preview](preview.png)
+
 ## Table of Contents
 
 - [Technologies](#Technologies)
@@ -43,7 +45,6 @@ requires download of node.js, npm, Express npm,
 - Enter note text on the 'Note Text' text to insert a notation
 - Click on the save icon to save your notes
 
-![preview](preview.png)
 
 ## Contributions
 
